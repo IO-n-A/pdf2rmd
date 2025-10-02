@@ -1,0 +1,27 @@
+# Python dependencies for pdf2rmd
+#
+# The script uses the Nougat OCR CLI (installed via pip) and the 'pdftoppm'
+# executable from Poppler (installed via your OS package manager).
+#
+# Install Python packages:
+#   pip install -r requirements.txt
+#
+# Then install system dependencies for Poppler:
+#   Linux (Debian/Ubuntu): sudo apt-get update && sudo apt-get install -y poppler-utils
+#   Linux (Fedora/RHEL):   sudo dnf install -y poppler-utils
+#   macOS (Homebrew):      brew install poppler
+#   Windows (Chocolatey):  choco install poppler
+#   Windows (Scoop):       scoop install poppler
+#
+# Verify after installation:
+#   pdftoppm -v
+#   nougat --help
+#
+# Notes:
+# - The 'nougat-ocr' package brings the 'nougat' CLI used by main.py.
+# - Installing 'nougat-ocr' may pull PyTorch; if you need a specific
+#   CUDA/CPU build, install torch first per https://pytorch.org/get-started/locally/
+#   and then install nougat-ocr.
+# - Poppler is not installable via pip; use your system package manager as above.
+
+nougat-ocr

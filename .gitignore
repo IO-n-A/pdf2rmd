@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Asset directories - keep structure but ignore generated files
+assets/in/*.pdf
+assets/out/nougat/*.mmd
+assets/out/png/*.png
+assets/out/figures/
+!assets/in/.gitkeep
+!assets/out/.gitkeep
+
+# Nougat model cache
+~/.cache/nougat/
+
+# PyTorch
+*.pth
+*.pt
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# R files (if testing rendering)
+*.aux
+*.out
+*.toc
+*.synctex.gz
+.Rproj.user
+*.Rproj
